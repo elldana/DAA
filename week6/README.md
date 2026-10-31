@@ -1,0 +1,3 @@
+# Week 6 - Binary Trees
+
+In this week, I solved several problems about binary trees using Java. While working on these tasks, I practiced recursive and iterative tree traversal, depth-first search, and breadth-first search. I used the TreeNode class to represent each node of a tree. Most solutions are based on recursion because it makes the structure of a tree easier to process. In some problems, I also added an iterative approach to understand how the same task can be solved with a stack or a queue. Each problem has its own Solution.java file with the implementation and a short explanation in this README.

@@ -1,0 +1,3 @@
+# Minimum Depth of Binary Tree
+
+In this problem, I had to find the shortest path from the root to a leaf. The important detail is that a leaf must not have children. A simple use of Math.min is not correct when one child is null, because the null subtree has depth zero and may be selected even though it does not contain a leaf. In my correct DFS solution, I first check whether the node is null. If one child is missing, I continue only through the other child. If both children exist, I take the smaller depth and add one. I also implemented BFS, which checks nodes level by level and returns the depth as soon as it reaches the first leaf. Both approaches have O(n) time complexity. I kept an incorrect version in the code to show the common mistake with this problem.

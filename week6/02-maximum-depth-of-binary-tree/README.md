@@ -1,0 +1,3 @@
+# Maximum Depth of Binary Tree
+
+The task is to find the maximum number of nodes on a path from the root to a leaf. I used recursion for the main solution. If the node is null, its depth is zero. Otherwise, I calculate the depth of the left and right subtrees, take the larger value, and add one for the current node. I also wrote a BFS solution using a queue. It processes the tree level by level and increases the depth after each level. Both solutions have O(n) time complexity because every node is visited once. The recursive solution uses O(h) additional space, while the BFS solution can use O(n) space in the worst case.

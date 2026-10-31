@@ -1,0 +1,3 @@
+# Binary Tree Paths
+
+In this problem, I needed to return all paths from the root to the leaf nodes. I used DFS and a StringBuilder to build each path. When I visit a node, I save the current length of the StringBuilder, add the node value, and continue to its children. If the node is a leaf, I add the completed path to the result list. After processing the node, I restore the previous StringBuilder length. This makes it possible to reuse the same object for different branches without mixing their paths. Every node is visited once, but the total work also depends on the length of the paths stored in the result. The recursion stack uses O(h) space, excluding the returned paths.

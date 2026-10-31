@@ -1,0 +1,3 @@
+# Merge Two Binary Trees
+
+For this problem, I had to combine two binary trees. If a node exists in only one tree, that node can be used in the result. If both nodes exist, their values are added together, and their left and right children are merged recursively. In my implementation, I update the first tree and use it as the result, so the original first tree is modified. Each pair of corresponding nodes is processed once, which gives O(m) time complexity, where m is the number of nodes in the smaller overlapping structure. The recursion stack uses O(h) space, where h is the maximum height of the trees.

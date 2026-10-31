@@ -1,0 +1,3 @@
+# Binary Tree Preorder Traversal
+
+For preorder traversal, the required order is current node, left subtree, and right subtree. I implemented the iterative approach with a stack. First, I push the root. Then I repeatedly take a node from the stack, add its value to the result, and push its right child followed by its left child. The left child is pushed last, so it is processed first. I also included a recursive implementation that follows the same order directly. Both versions visit each node once and have O(n) time complexity. The additional space complexity is O(h) for recursion and up to O(n) for the stack in the worst case.

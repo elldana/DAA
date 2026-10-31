@@ -1,0 +1,3 @@
+# Binary Tree Postorder Traversal
+
+Postorder traversal visits the left subtree first, then the right subtree, and finally the current node. I implemented a recursive solution that follows this order directly. I also added an iterative solution. In that version, I process the current node before its children and push the left child before the right child. This produces the reverse of the required order, so after all nodes are processed, I reverse the result list. Each node is processed once, which gives O(n) time complexity. The solution uses O(h) recursive space or up to O(n) space for the iterative stack and result list.
